@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/app/Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Models</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Attendance.php.html#12">App\Models\Attendance</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KenteiMst.php.html#12">App\Models\KenteiMst</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KenteiProgress.php.html#12">App\Models\KenteiProgress</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMember.php.html#19">App\Models\ZMember</a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="ZTicket.php.html#14">App\Models\ZTicket</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="UserRank.php.html#15">App\Models\UserRank</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="ZContract.php.html#14">App\Models\ZContract</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Yoyaku.php.html#15">App\Models\Yoyaku</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Attendance.php.html#12">App\Models\Attendance</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="ZTicket.php.html#14">App\Models\ZTicket</a></td><td class="text-right">45</td></tr>
+       <tr><td><a href="ZMember.php.html#19">App\Models\ZMember</a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="UserRank.php.html#15">App\Models\UserRank</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Yoyaku.php.html#15">App\Models\Yoyaku</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="ZContract.php.html#14">App\Models\ZContract</a></td><td class="text-right">17</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Attendance.php.html#30"><abbr title="App\Models\Attendance::teacher">teacher</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZContract.php.html#58"><abbr title="App\Models\ZContract::getDaysInMonth">getDaysInMonth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZTicket.php.html#169"><abbr title="App\Models\ZTicket::getAppointmentStartTimes">getAppointmentStartTimes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZTicket.php.html#148"><abbr title="App\Models\ZTicket::getPreReservationStartDate">getPreReservationStartDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMember.php.html#172"><abbr title="App\Models\ZMember::notifyReserveFinish">notifyReserveFinish</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMember.php.html#155"><abbr title="App\Models\ZMember::notifyReserveCancel">notifyReserveCancel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMember.php.html#142"><abbr title="App\Models\ZMember::notifyInfoChange">notifyInfoChange</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMember.php.html#135"><abbr title="App\Models\ZMember::isExists">isExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Attendance.php.html#40"><abbr title="App\Models\Attendance::schooltimeMst">schooltimeMst</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZTicket.php.html#285"><abbr title="App\Models\ZTicket::updateMaterial">updateMaterial</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserRank.php.html#209"><abbr title="App\Models\UserRank::notify">notify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserRank.php.html#121"><abbr title="App\Models\UserRank::getRankLabel">getRankLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KenteiProgress.php.html#51"><abbr title="App\Models\KenteiProgress::member">member</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KenteiProgress.php.html#37"><abbr title="App\Models\KenteiProgress::kenteiMst">kenteiMst</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KenteiMst.php.html#34"><abbr title="App\Models\KenteiMst::kenteiProgress">kenteiProgress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Attendance.php.html#101"><abbr title="App\Models\Attendance::getReservableByDate">getReservableByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Attendance.php.html#52"><abbr title="App\Models\Attendance::getAvailableTeachersByDate">getAvailableTeachersByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZContract.php.html#115"><abbr title="App\Models\ZContract::getLatestZTicket">getLatestZTicket</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Yoyaku.php.html#216"><abbr title="App\Models\Yoyaku::cancel">cancel</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="ZMember.php.html#97"><abbr title="App\Models\ZMember::create">create</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Yoyaku.php.html#174"><abbr title="App\Models\Yoyaku::create">create</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="ZMember.php.html#72"><abbr title="App\Models\ZMember::getLatestUserRank">getLatestUserRank</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="ZContract.php.html#86"><abbr title="App\Models\ZContract::getOngoingMaterials">getOngoingMaterials</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="ZTicket.php.html#194"><abbr title="App\Models\ZTicket::getLessonHistory">getLessonHistory</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="ZContract.php.html#67"><abbr title="App\Models\ZContract::getCurrentMaterial">getCurrentMaterial</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Attendance.php.html#101"><abbr title="App\Models\Attendance::getReservableByDate">getReservableByDate</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Attendance.php.html#52"><abbr title="App\Models\Attendance::getAvailableTeachersByDate">getAvailableTeachersByDate</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="ZTicket.php.html#285"><abbr title="App\Models\ZTicket::updateMaterial">updateMaterial</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ZContract.php.html#115"><abbr title="App\Models\ZContract::getLatestZTicket">getLatestZTicket</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="ZContract.php.html#67"><abbr title="App\Models\ZContract::getCurrentMaterial">getCurrentMaterial</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ZContract.php.html#86"><abbr title="App\Models\ZContract::getOngoingMaterials">getOngoingMaterials</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ZTicket.php.html#194"><abbr title="App\Models\ZTicket::getLessonHistory">getLessonHistory</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ZMember.php.html#72"><abbr title="App\Models\ZMember::getLatestUserRank">getLatestUserRank</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Yoyaku.php.html#216"><abbr title="App\Models\Yoyaku::cancel">cancel</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ZMember.php.html#97"><abbr title="App\Models\ZMember::create">create</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Yoyaku.php.html#174"><abbr title="App\Models\Yoyaku::create">create</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.24</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.5.14</a> at Wed Mar 18 9:49:25 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,0,0,0,0,1,0,0,1,3,0,11], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([17,0,0,0,0,0,1,0,2,5,1,81], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,16,"<a href=\"Attendance.php.html#12\">App\\Models\\Attendance<\/a>"],[0,1,"<a href=\"KenteiMst.php.html#12\">App\\Models\\KenteiMst<\/a>"],[0,2,"<a href=\"KenteiProgress.php.html#12\">App\\Models\\KenteiProgress<\/a>"],[100,2,"<a href=\"LessonResult.php.html#11\">App\\Models\\LessonResult<\/a>"],[100,6,"<a href=\"Member.php.html#13\">App\\Models\\Member<\/a>"],[100,3,"<a href=\"ParentMember.php.html#11\">App\\Models\\ParentMember<\/a>"],[100,3,"<a href=\"SchooltimeMst.php.html#12\">App\\Models\\SchooltimeMst<\/a>"],[100,9,"<a href=\"Teacher.php.html#12\">App\\Models\\Teacher<\/a>"],[100,5,"<a href=\"Ticket.php.html#12\">App\\Models\\Ticket<\/a>"],[100,6,"<a href=\"TicketSet.php.html#13\">App\\Models\\TicketSet<\/a>"],[80,18,"<a href=\"UserRank.php.html#15\">App\\Models\\UserRank<\/a>"],[88.88888888888889,19,"<a href=\"Yoyaku.php.html#15\">App\\Models\\Yoyaku<\/a>"],[80.55555555555556,16,"<a href=\"ZContract.php.html#14\">App\\Models\\ZContract<\/a>"],[100,1,"<a href=\"ZMaterial.php.html#11\">App\\Models\\ZMaterial<\/a>"],[43.333333333333336,13,"<a href=\"ZMember.php.html#19\">App\\Models\\ZMember<\/a>"],[100,5,"<a href=\"ZProvisionalRegistration.php.html#14\">App\\Models\\ZProvisionalRegistration<\/a>"],[76.62337662337663,32,"<a href=\"ZTicket.php.html#14\">App\\Models\\ZTicket<\/a>"],[100,2,"<a href=\"Zoom.php.html#11\">App\\Models\\Zoom<\/a>"],[100,9,"<a href=\"Traits\/CompositePrimaryKey.php.html#16\">CompositePrimaryKey<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Attendance.php.html#30\">App\\Models\\Attendance::teacher<\/a>"],[0,1,"<a href=\"Attendance.php.html#40\">App\\Models\\Attendance::schooltimeMst<\/a>"],[0,6,"<a href=\"Attendance.php.html#52\">App\\Models\\Attendance::getAvailableTeachersByDate<\/a>"],[0,8,"<a href=\"Attendance.php.html#101\">App\\Models\\Attendance::getReservableByDate<\/a>"],[0,1,"<a href=\"KenteiMst.php.html#34\">App\\Models\\KenteiMst::kenteiProgress<\/a>"],[0,1,"<a href=\"KenteiProgress.php.html#37\">App\\Models\\KenteiProgress::kenteiMst<\/a>"],[0,1,"<a href=\"KenteiProgress.php.html#51\">App\\Models\\KenteiProgress::member<\/a>"],[100,1,"<a href=\"LessonResult.php.html#31\">App\\Models\\LessonResult::yoyaku<\/a>"],[100,1,"<a href=\"LessonResult.php.html#39\">App\\Models\\LessonResult::getLabel<\/a>"],[100,1,"<a href=\"Member.php.html#45\">App\\Models\\Member::yoyaku<\/a>"],[100,1,"<a href=\"Member.php.html#55\">App\\Models\\Member::parentMember<\/a>"],[100,1,"<a href=\"Member.php.html#65\">App\\Models\\Member::kenteiProgress<\/a>"],[100,1,"<a href=\"Member.php.html#75\">App\\Models\\Member::ticketSets<\/a>"],[100,1,"<a href=\"Member.php.html#85\">App\\Models\\Member::zMember<\/a>"],[100,1,"<a href=\"Member.php.html#94\">App\\Models\\Member::create<\/a>"],[100,1,"<a href=\"ParentMember.php.html#39\">App\\Models\\ParentMember::members<\/a>"],[100,1,"<a href=\"ParentMember.php.html#47\">App\\Models\\ParentMember::generateId<\/a>"],[100,1,"<a href=\"ParentMember.php.html#58\">App\\Models\\ParentMember::create<\/a>"],[100,1,"<a href=\"SchooltimeMst.php.html#25\">App\\Models\\SchooltimeMst::getStartTime<\/a>"],[100,1,"<a href=\"SchooltimeMst.php.html#35\">App\\Models\\SchooltimeMst::getCancelTime<\/a>"],[100,1,"<a href=\"SchooltimeMst.php.html#45\">App\\Models\\SchooltimeMst::getEndTime<\/a>"],[100,1,"<a href=\"Teacher.php.html#33\">App\\Models\\Teacher::yoyaku<\/a>"],[100,3,"<a href=\"Teacher.php.html#41\">App\\Models\\Teacher::getSexLabel<\/a>"],[100,2,"<a href=\"Teacher.php.html#54\">App\\Models\\Teacher::getAge<\/a>"],[100,2,"<a href=\"Teacher.php.html#66\">App\\Models\\Teacher::getImageUrl<\/a>"],[100,1,"<a href=\"Teacher.php.html#76\">App\\Models\\Teacher::getYoutubeUrl<\/a>"],[100,1,"<a href=\"Ticket.php.html#49\">App\\Models\\Ticket::ticketSet<\/a>"],[100,1,"<a href=\"Ticket.php.html#59\">App\\Models\\Ticket::yoyaku<\/a>"],[100,1,"<a href=\"Ticket.php.html#70\">App\\Models\\Ticket::create<\/a>"],[100,1,"<a href=\"Ticket.php.html#88\">App\\Models\\Ticket::consume<\/a>"],[100,1,"<a href=\"Ticket.php.html#106\">App\\Models\\Ticket::cancel<\/a>"],[100,1,"<a href=\"TicketSet.php.html#50\">App\\Models\\TicketSet::member<\/a>"],[100,1,"<a href=\"TicketSet.php.html#60\">App\\Models\\TicketSet::tickets<\/a>"],[100,1,"<a href=\"TicketSet.php.html#70\">App\\Models\\TicketSet::zTicket<\/a>"],[100,1,"<a href=\"TicketSet.php.html#82\">App\\Models\\TicketSet::create<\/a>"],[100,2,"<a href=\"TicketSet.php.html#106\">App\\Models\\TicketSet::updateUserId<\/a>"],[100,1,"<a href=\"UserRank.php.html#93\">App\\Models\\UserRank::zMember<\/a>"],[100,1,"<a href=\"UserRank.php.html#101\">App\\Models\\UserRank::getReservableTime<\/a>"],[100,2,"<a href=\"UserRank.php.html#109\">App\\Models\\UserRank::getPeriod<\/a>"],[0,1,"<a href=\"UserRank.php.html#121\">App\\Models\\UserRank::getRankLabel<\/a>"],[100,1,"<a href=\"UserRank.php.html#129\">App\\Models\\UserRank::getRankIconClass<\/a>"],[100,4,"<a href=\"UserRank.php.html#138\">App\\Models\\UserRank::getRank<\/a>"],[95.23809523809523,6,"<a href=\"UserRank.php.html#155\">App\\Models\\UserRank::create<\/a>"],[100,1,"<a href=\"UserRank.php.html#192\">App\\Models\\UserRank::initialize<\/a>"],[0,1,"<a href=\"UserRank.php.html#209\">App\\Models\\UserRank::notify<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#53\">App\\Models\\Yoyaku::teacher<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#63\">App\\Models\\Yoyaku::member<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#73\">App\\Models\\Yoyaku::tickets<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#83\">App\\Models\\Yoyaku::zTicket<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#93\">App\\Models\\Yoyaku::schooltimeMst<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#103\">App\\Models\\Yoyaku::zoom<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#113\">App\\Models\\Yoyaku::lessonResult<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#121\">App\\Models\\Yoyaku::getTaisyoDate<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#129\">App\\Models\\Yoyaku::getTaisyoDateLabel<\/a>"],[100,2,"<a href=\"Yoyaku.php.html#137\">App\\Models\\Yoyaku::getReserveStartDate<\/a>"],[100,2,"<a href=\"Yoyaku.php.html#152\">App\\Models\\Yoyaku::getReserveEndDate<\/a>"],[85.71428571428571,2,"<a href=\"Yoyaku.php.html#174\">App\\Models\\Yoyaku::create<\/a>"],[75,2,"<a href=\"Yoyaku.php.html#216\">App\\Models\\Yoyaku::cancel<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#240\">App\\Models\\Yoyaku::isNearStartDate<\/a>"],[100,1,"<a href=\"Yoyaku.php.html#248\">App\\Models\\Yoyaku::getZoomUrl<\/a>"],[100,1,"<a href=\"ZContract.php.html#40\">App\\Models\\ZContract::yoyaku<\/a>"],[100,1,"<a href=\"ZContract.php.html#50\">App\\Models\\ZContract::zTickets<\/a>"],[0,1,"<a href=\"ZContract.php.html#58\">App\\Models\\ZContract::getDaysInMonth<\/a>"],[87.5,4,"<a href=\"ZContract.php.html#67\">App\\Models\\ZContract::getCurrentMaterial<\/a>"],[87.5,4,"<a href=\"ZContract.php.html#86\">App\\Models\\ZContract::getOngoingMaterials<\/a>"],[57.14285714285714,4,"<a href=\"ZContract.php.html#115\">App\\Models\\ZContract::getLatestZTicket<\/a>"],[100,1,"<a href=\"ZContract.php.html#134\">App\\Models\\ZContract::getMaterial<\/a>"],[100,1,"<a href=\"ZMaterial.php.html#24\">App\\Models\\ZMaterial::zTickets<\/a>"],[100,1,"<a href=\"ZMember.php.html#43\">App\\Models\\ZMember::member<\/a>"],[100,1,"<a href=\"ZMember.php.html#54\">App\\Models\\ZMember::zContracts<\/a>"],[100,1,"<a href=\"ZMember.php.html#64\">App\\Models\\ZMember::userRanks<\/a>"],[85.71428571428571,3,"<a href=\"ZMember.php.html#72\">App\\Models\\ZMember::getLatestUserRank<\/a>"],[76.47058823529412,2,"<a href=\"ZMember.php.html#97\">App\\Models\\ZMember::create<\/a>"],[100,1,"<a href=\"ZMember.php.html#129\">App\\Models\\ZMember::updateById<\/a>"],[0,1,"<a href=\"ZMember.php.html#135\">App\\Models\\ZMember::isExists<\/a>"],[0,1,"<a href=\"ZMember.php.html#142\">App\\Models\\ZMember::notifyInfoChange<\/a>"],[0,1,"<a href=\"ZMember.php.html#155\">App\\Models\\ZMember::notifyReserveCancel<\/a>"],[0,1,"<a href=\"ZMember.php.html#172\">App\\Models\\ZMember::notifyReserveFinish<\/a>"],[100,3,"<a href=\"ZProvisionalRegistration.php.html#33\">App\\Models\\ZProvisionalRegistration::validate<\/a>"],[100,1,"<a href=\"ZProvisionalRegistration.php.html#51\">App\\Models\\ZProvisionalRegistration::create<\/a>"],[100,1,"<a href=\"ZProvisionalRegistration.php.html#67\">App\\Models\\ZProvisionalRegistration::findByEmail<\/a>"],[100,1,"<a href=\"ZTicket.php.html#52\">App\\Models\\ZTicket::zMaterial<\/a>"],[100,1,"<a href=\"ZTicket.php.html#62\">App\\Models\\ZTicket::yoyaku<\/a>"],[100,1,"<a href=\"ZTicket.php.html#72\">App\\Models\\ZTicket::zContract<\/a>"],[100,1,"<a href=\"ZTicket.php.html#82\">App\\Models\\ZTicket::ticketSet<\/a>"],[100,1,"<a href=\"ZTicket.php.html#92\">App\\Models\\ZTicket::lessonResult<\/a>"],[100,2,"<a href=\"ZTicket.php.html#100\">App\\Models\\ZTicket::isAvailable<\/a>"],[100,1,"<a href=\"ZTicket.php.html#108\">App\\Models\\ZTicket::isConsumed<\/a>"],[100,3,"<a href=\"ZTicket.php.html#116\">App\\Models\\ZTicket::canReserve<\/a>"],[100,3,"<a href=\"ZTicket.php.html#126\">App\\Models\\ZTicket::canCancel<\/a>"],[100,2,"<a href=\"ZTicket.php.html#140\">App\\Models\\ZTicket::getUsableStartDate<\/a>"],[0,1,"<a href=\"ZTicket.php.html#148\">App\\Models\\ZTicket::getPreReservationStartDate<\/a>"],[100,1,"<a href=\"ZTicket.php.html#156\">App\\Models\\ZTicket::getPreReservationStartDateLabel<\/a>"],[100,1,"<a href=\"ZTicket.php.html#164\">App\\Models\\ZTicket::getUsableEndDate<\/a>"],[0,1,"<a href=\"ZTicket.php.html#169\">App\\Models\\ZTicket::getAppointmentStartTimes<\/a>"],[100,1,"<a href=\"ZTicket.php.html#183\">App\\Models\\ZTicket::updateYoyaku<\/a>"],[87.5,4,"<a href=\"ZTicket.php.html#194\">App\\Models\\ZTicket::getLessonHistory<\/a>"],[100,2,"<a href=\"ZTicket.php.html#238\">App\\Models\\ZTicket::create<\/a>"],[100,1,"<a href=\"ZTicket.php.html#263\">App\\Models\\ZTicket::cancel<\/a>"],[100,1,"<a href=\"ZTicket.php.html#277\">App\\Models\\ZTicket::find<\/a>"],[0,3,"<a href=\"ZTicket.php.html#285\">App\\Models\\ZTicket::updateMaterial<\/a>"],[100,1,"<a href=\"Zoom.php.html#30\">App\\Models\\Zoom::yoyaku<\/a>"],[100,1,"<a href=\"Zoom.php.html#41\">App\\Models\\Zoom::create<\/a>"],[100,1,"<a href=\"Traits\/CompositePrimaryKey.php.html#22\">CompositePrimaryKey::getIncrementing<\/a>"],[100,3,"<a href=\"Traits\/CompositePrimaryKey.php.html#34\">CompositePrimaryKey::setKeysForSaveQuery<\/a>"],[100,3,"<a href=\"Traits\/CompositePrimaryKey.php.html#55\">CompositePrimaryKey::getKeyForSaveQuery<\/a>"],[100,2,"<a href=\"Traits\/CompositePrimaryKey.php.html#76\">CompositePrimaryKey::find<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
